@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/****** Reset All Browser Defaults  *********/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/****** General Styles *********/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #000; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+  a :hover {
+    text-decoration: none; }
+
+.container {
+  width: 1080px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative; }
+
+/****** Layout Styles *********/
+#header {
+  border-top: 3px solid #E8BA30;
+  text-align: center;
+  padding: 28px 0 23px; }
+
+#main {
+  width: 740px;
+  float: left; }
+
+#aside {
+  float: right;
+  width: 340px;
+  background: #EFEFEF;
+  padding: 20px 0;
+  text-align: center; }
+
+.main--wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#footer {
+  position: relative;
+  margin-top: 91px;
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff; }
+
+#footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.slideshow-wrapper {
+  position: relative;
+  text-align: center;
+  width: 1400px;
+  margin: 0 auto 42px auto; }
+
+.slideshow--mask {
+  margin: 0 auto;
+  width: 1400px;
+  height: 418px;
+  overflow: hidden; }
+
+ul.mySlides {
+  position: relative;
+  top: 0px;
+  left: 0px; }
+  ul.mySlides li {
+    float: left;
+    position: relative;
+    width: 1400px; }
+
+.slideshow-wrapper-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1080px;
+  height: 418px;
+  text-align: center;
+  color: #fff; }
+  .slideshow-wrapper-content h1 {
+    padding-top: 138px;
+    font-size: 62px;
+    font-weight: bolder; }
+  .slideshow-wrapper-content p {
+    font-size: 19px;
+    margin-top: 39px;
+    letter-spacing: 4.7px;
+    line-height: 23px;
+    font-weight: 600; }
+
+.mySlides {
+  position: relative; }
+
+.slideshow--navigation {
+  position: absolute;
+  bottom: 16px;
+  margin-left: 47%; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.6s ease;
+  -moz-transition: background-color 0.6s ease;
+  -ms-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.selected, .dot:hover {
+  background-color: #E8BA30; }
+
+.slideshow--click-previous, .slideshow--click-next {
+  position: absolute;
+  top: 185px; }
+
+.slideshow--click-previous {
+  left: 0; }
+
+.slideshow--click-next {
+  right: 0; }
+
+article {
+  display: block;
+  padding-right: 53px;
+  margin-bottom: 39px; }
+  article small {
+    font-size: 13px;
+    color: #999999; }
+  article h1 {
+    margin-top: 9px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold; }
+  article p {
+    font-size: 16.17px;
+    margin-top: 9px; }
+  article a:hover h1 {
+    color: #E8BA30; }
+  article a:hover .display-onHover {
+    display: block; }
+  article a:hover .display-on {
+    display: none; }
+
+article:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.article--thumbnail {
+  float: left;
+  margin-right: 12px; }
+  .article--thumbnail .display-onHover {
+    display: none; }
+  .article--thumbnail .display-on {
+    display: block; }
+
+.main--moreArticles-button {
+  text-align: center;
+  display: block;
+  margin: 59px 0 0 140px;
+  width: 403px;
+  background-color: #333333;
+  position: relative; }
+  .main--moreArticles-button a {
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none; }
+    .main--moreArticles-button a:after {
+      background: url(../images/article/main--moreArticle.png);
+      position: absolute;
+      width: 10px;
+      height: 16px;
+      top: 12px;
+      right: 18px;
+      content: ""; }
+
+.aside--main-banner {
+  margin-bottom: 30px; }
+
+.aside--recommended {
+  width: 300px;
+  display: block;
+  margin: 0 auto; }
+  .aside--recommended h1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    line-height: 37px;
+    border-bottom: 2px solid #000; }
+
+.sidebar--article {
+  display: block;
+  padding-right: 9px;
+  margin-top: 20px;
+  text-align: left; }
+  .sidebar--article h2 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px; }
+  .sidebar--article small {
+    font-size: 12.5px;
+    color: #999999; }
+  .sidebar--article a:hover h2 {
+    color: #E8BA30; }
+  .sidebar--article a:hover .display-onHover {
+    display: block; }
+  .sidebar--article a:hover .display-on {
+    display: none; }
+
+.sidebar--article:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.sidebar--article-thumbnail {
+  float: left;
+  margin-right: 7px; }
+  .sidebar--article-thumbnail .display-onHover {
+    display: none; }
+  .sidebar--article-thumbnail .display-on {
+    display: block; }
+
+.aside--list-banner ul {
+  margin-top: 38px; }
+  .aside--list-banner ul li {
+    margin-bottom: 14px; }
+    .aside--list-banner ul li:last-child {
+      margin-bottom: -2px; }
+
+.gotoTop {
+  position: absolute;
+  top: -50px;
+  right: 0; }
+
+.copyright--content {
+  float: left;
+  font-size: 14px; }
+  .copyright--content a {
+    color: #fff; }
+
+.copyright--date {
+  float: right;
+  font-size: 13px; }

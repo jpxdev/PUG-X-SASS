@@ -1,0 +1,33 @@
+/****** Layout Styles *********/
+#header {
+  border-top: 3px solid #E8BA30;
+  text-align: center;
+  padding: 28px 0 23px; }
+
+#main {
+  width: 740px;
+  float: left; }
+
+#aside {
+  float: right;
+  width: 340px;
+  background: #EFEFEF;
+  padding: 20px 0;
+  text-align: center; }
+
+.main--wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+#footer {
+  position: relative;
+  margin-top: 91px;
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff; }
+
+#footer:after {
+  content: "";
+  display: table;
+  clear: both; }

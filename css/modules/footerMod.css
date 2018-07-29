@@ -1,0 +1,14 @@
+.gotoTop {
+  position: absolute;
+  top: -50px;
+  right: 0; }
+
+.copyright--content {
+  float: left;
+  font-size: 14px; }
+  .copyright--content a {
+    color: #fff; }
+
+.copyright--date {
+  float: right;
+  font-size: 13px; }

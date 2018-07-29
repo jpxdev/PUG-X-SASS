@@ -1,0 +1,3 @@
+_layout.sass
+dividing the pages in major sections
+header, main, footer

@@ -1,0 +1,63 @@
+@import '../vars';
+@import '../mixins';
+
+.aside--main-banner{
+  margin-bottom: 30px;
+}
+
+.aside--recommended{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  h1{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    line-height: 37px;
+    border-bottom: 2px solid #000;
+  }
+}
+
+.sidebar--article{
+  display: block;
+  padding-right: 9px;
+  margin-top: 20px;
+  text-align: left;
+  h2{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+  small{
+    font-size: 12.5px;
+    color: $date-font-color;
+  }
+  a:hover{
+    h2{
+      color: $secondary-color;
+    }
+    @include hoverImage();
+  }
+}
+
+.sidebar--article:after{
+  @include clearFloat();
+}
+
+.sidebar--article-thumbnail{
+  float: left;
+  margin-right: 7px;
+  @include nothoverImage();
+}
+
+.aside--list-banner{
+  ul{
+    margin-top: 38px;
+    li{
+      margin-bottom:14px;
+      &:last-child{
+        margin-bottom: -2px;
+      }
+    }
+  }
+}

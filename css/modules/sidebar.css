@@ -1,0 +1,52 @@
+.aside--main-banner {
+  margin-bottom: 30px; }
+
+.aside--recommended {
+  width: 300px;
+  display: block;
+  margin: 0 auto; }
+  .aside--recommended h1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    line-height: 37px;
+    border-bottom: 2px solid #000; }
+
+.sidebar--article {
+  display: block;
+  padding-right: 9px;
+  margin-top: 20px;
+  text-align: left; }
+  .sidebar--article h2 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px; }
+  .sidebar--article small {
+    font-size: 12.5px;
+    color: #999999; }
+  .sidebar--article a:hover h2 {
+    color: #E8BA30; }
+  .sidebar--article a:hover .display-onHover {
+    display: block; }
+  .sidebar--article a:hover .display-on {
+    display: none; }
+
+.sidebar--article:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.sidebar--article-thumbnail {
+  float: left;
+  margin-right: 7px; }
+  .sidebar--article-thumbnail .display-onHover {
+    display: none; }
+  .sidebar--article-thumbnail .display-on {
+    display: block; }
+
+.aside--list-banner ul {
+  margin-top: 38px; }
+  .aside--list-banner ul li {
+    margin-bottom: 14px; }
+    .aside--list-banner ul li:last-child {
+      margin-bottom: -2px; }

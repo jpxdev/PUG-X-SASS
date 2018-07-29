@@ -1,0 +1,88 @@
+@import '../mixins';
+@import '../vars';
+
+.slideshow-wrapper{
+  position: relative;
+  text-align: center;
+  width: 1400px;
+  margin: 0 auto 42px auto;
+}
+
+.slideshow--mask{
+  margin: 0 auto;
+  width: 1400px;
+  height: 418px;
+  overflow:hidden;
+}
+
+ul.mySlides{
+  position:relative;
+  top:0px;
+  left:0px;
+  li{
+    float:left;
+    position: relative;
+    width: 1400px;
+  }
+}
+
+.slideshow-wrapper-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1080px;
+  height: 418px;
+  text-align: center;
+  color: #fff;
+    h1{
+      padding-top: 138px;
+      font-size: 62px;
+      font-weight: bolder;
+    }
+    p{
+      font-size: 19px;
+      margin-top: 39px;
+      letter-spacing: 4.7px;
+      line-height: 23px;
+      font-weight: 600;
+    }
+}
+
+.mySlides{
+  position: relative;
+}
+
+.slideshow--navigation{
+  position: absolute;
+  bottom: 16px;
+  margin-left: 47%;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  display: inline-block;
+  @include slide-dotNav(50%, 0.6s);
+}
+
+.selected, .dot:hover {
+  background-color: $secondary-color;
+}
+
+.slideshow--click-previous, .slideshow--click-next{
+  position: absolute;
+  top: 185px;
+}
+
+.slideshow--click-previous{
+  left: 0;
+}
+
+.slideshow--click-next{
+  right: 0;
+}

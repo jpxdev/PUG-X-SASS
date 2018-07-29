@@ -1,0 +1,27 @@
+@import 'vars';
+
+/****** General Styles *********/
+* {
+ box-sizing: border-box
+}
+
+body{
+  font-family: $font-stack;
+  color: $primary-font-color;
+}
+
+a{
+  color: $primary-font-color;
+  text-decoration: none;
+  :hover{
+    text-decoration: none;
+  }
+}
+
+.container{
+  width: 1080px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}

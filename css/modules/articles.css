@@ -1,0 +1,57 @@
+article {
+  display: block;
+  padding-right: 53px;
+  margin-bottom: 39px; }
+  article small {
+    font-size: 13px;
+    color: #999999; }
+  article h1 {
+    margin-top: 9px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold; }
+  article p {
+    font-size: 16.17px;
+    margin-top: 9px; }
+  article a:hover h1 {
+    color: #E8BA30; }
+  article a:hover .display-onHover {
+    display: block; }
+  article a:hover .display-on {
+    display: none; }
+
+article:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.article--thumbnail {
+  float: left;
+  margin-right: 12px; }
+  .article--thumbnail .display-onHover {
+    display: none; }
+  .article--thumbnail .display-on {
+    display: block; }
+
+.main--moreArticles-button {
+  text-align: center;
+  display: block;
+  margin: 59px 0 0 140px;
+  width: 403px;
+  background-color: #333333;
+  position: relative; }
+  .main--moreArticles-button a {
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none; }
+    .main--moreArticles-button a:after {
+      background: url(../images/article/main--moreArticle.png);
+      position: absolute;
+      width: 10px;
+      height: 16px;
+      top: 12px;
+      right: 18px;
+      content: ""; }

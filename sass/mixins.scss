@@ -1,0 +1,36 @@
+@mixin clearFloat(){
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@mixin slide-dotNav($border-radius, $transition){
+  -webkit-border-radius: $border-radius;
+  -khtml-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+
+  -webkit-transition: background-color $transition ease;
+  -moz-transition: background-color $transition ease;
+  -ms-transition: background-color $transition ease;
+  -o-transition: background-color $transition ease;
+  transition: background-color $transition ease;
+}
+
+@mixin hoverImage(){
+  .display-onHover{
+    display: block;
+  }
+  .display-on{
+    display: none;
+  }
+}
+
+@mixin nothoverImage(){
+  .display-onHover{
+    display: none;
+  }
+  .display-on{
+    display: block;
+  }
+}
